@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="test.AssertOptimization.WorkStationGroupsClear"/>
+      <class name="test.AssertOptimization.WorkStationGroupsCURD"/>
+      <class name="test.AssertOptimization.WorkStationwithMissingScanField"/>
+      <class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsWithMissingSoftwareTag"/>
+      <class name="test.AssertOptimization.SoftwareDefinitationWithMissingNameField"/>
+      <class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsClear"/>
+      <class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsCURD"/>
+      <class name="test.AssertOptimization.SoftwareDefinitationWithMissingAssociatedProcessesField"/>
+      <class name="test.AssertOptimization.SoftwareDefinitationCURD"/>
+      <class name="test.AssertOptimization.WorkStationwithMissingNameFiled"/>
+      <class name="test.AssertOptimization.SoftwareDefinitionActivityTagEnableInSoftwareTagPage"/>
+      <class name="test.AssertOptimization.SoftwaredefinitionForActivityTagPresent"/>
+      <class name="test.AssertOptimization.SoftwareDefinitationClear"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

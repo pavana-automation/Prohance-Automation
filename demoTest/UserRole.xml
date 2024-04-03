@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+			<listeners>
+		<listener class-name="test.Listeners"></listener>
+	</listeners>
+	
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="UserRoles.UserRolesAddNewMember"/>
+      <class name="UserRoles.UserRolesAddNewManager"/>
+      <class name="UserRoles.UserRolesAddNewManagerDelete"/>
+      <class name="UserRoles.UserRolesAddNewMemberDelete"/>
+      <class name="UserRoles.UserRoleExcelValidation"/>
+      <class name="UserRoles.UserRolePDFValidation"></class>
+      <class name="UserRoles.UserRolesBulkUpdate"></class>
+      <class name="UserRoles.UserRolesBulkUpdateMember"/>
+      <class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataPDF"></class>
+      <class name="UserRoles.UserRoleSorting"/>
+      <class name="UserRoles.UserRolesModifyManagerToMeber"/>
+      <class name="UserRoles.UserRolesModifyMemberToManager"/>
+      <class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS"></class>
+       <class name="UserRoles.UserRolesModifyManagerExportDataPermissionAllowUserToMail"></class>
+      <class name="UserRoles.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail"></class>
+      <class name="UserRoles.UserRolesModifyManagerModuleSelection"></class>
+      <class name="UserRoles.UserRolesModifyMemberModuleSelection"></class>
+      <class name="UserRoles.UserRolesModifyMemberHierarchyLevel"></class>
+      <class name="UserRoles.UserRolesModifyManagerHierarchyLevel"></class>
+      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS"></class>
+      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2"></class>
+      <class name="UserRoles.UserRolesModifyManagerDefineNewActivity"></class>
+      <class name="UserRoles.UserRolesModifyManagerEditActivityRating"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

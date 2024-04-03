@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="test.Listeners"></listener>
+	</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+       <class name="test.AOS.AOSBulkUpload"/>
+       <class name="test.AOS.AOSBulkUploadDelete"></class>
+       <class name="test.AOS.AOSBulkUploadModify"></class>
+       <class name="test.AOS.AOSDeleteFunction"/>
+      <class name="test.AOS.AOSUnknownApplicationAddingtoExistingQualifierText"/>
+      <class name="test.AOS.AOSAddNew"/>
+     <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNew"/>
+     <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewQualifierText"/>
+      <class name="test.AOS.AOSUnknownApplicationAddingtoExisting"/>
+      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName"/>
+      <class name="test.AOS.AOSModifyFunction"/>
+      <class name="test.AOS.AOSUnknownApplicationAddingtoExistingProcessName"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
