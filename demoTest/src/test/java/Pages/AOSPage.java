@@ -272,7 +272,7 @@ public class AOSPage {
 			String path = xls.getRecentFilePath();
 			FileInputStream file = new FileInputStream(path);
 
-			try (Workbook workbook = new HSSFWorkbook(file))
+			try (Workbook workbook = new XSSFWorkbook(file))
 			{
 				Sheet sheet = workbook.getSheetAt(0);
 				sheet.getLastRowNum();
@@ -316,7 +316,7 @@ public class AOSPage {
 			String path = xls.getRecentFilePath();
 			FileInputStream file = new FileInputStream(path);
 
-			try (Workbook workbook = new HSSFWorkbook(file))
+			try (Workbook workbook = new XSSFWorkbook(file))
 			{
 				Sheet sheet = workbook.getSheetAt(1);
 				sheet.getLastRowNum();
@@ -356,7 +356,7 @@ public class AOSPage {
 			String path = xls.getRecentFilePath();
 			FileInputStream file = new FileInputStream(path);
 
-			try (Workbook workbook = new HSSFWorkbook(file))
+			try (Workbook workbook = new XSSFWorkbook(file))
 			{
 				Sheet sheet = workbook.getSheetAt(2);
 				sheet.getLastRowNum();
@@ -398,7 +398,7 @@ public class AOSPage {
 			String path = xls.getRecentFilePath();
 			FileInputStream file = new FileInputStream(path);
 
-			try (Workbook workbook = new HSSFWorkbook(file))
+			try (Workbook workbook = new XSSFWorkbook(file))
 			{
 				Sheet sheet = workbook.getSheetAt(0);
 				sheet.getLastRowNum();
@@ -442,7 +442,7 @@ public class AOSPage {
 			String path = xls.getRecentFilePath();
 			FileInputStream file = new FileInputStream(path);
 
-			try (Workbook workbook = new HSSFWorkbook(file))
+			try (Workbook workbook = new XSSFWorkbook(file))
 			{
 				Sheet sheet = workbook.getSheetAt(0);
 				sheet.getLastRowNum();

@@ -43,26 +43,20 @@ public class AOSModifyFunction extends BaseTest{
 		sidenavPage.clickAOSBtn();
 		
 		driver.switchTo().frame("contentFrame");
-		
 
-		
 		Thread.sleep(2000);
 		
 		aos.clickModifyBtn();
 	
 		String result = randomStringGenerator.randomStringGenerator();
 		aos.sendApplicationNameTxt(result);
-		
-		
 		aos.clickAddNewSaveBtn();
 		
 		Thread.sleep(2000);
 		
 		ArrayList<String> ActualList = userdomain.getElementsInRowToList();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Assert.assertTrue(ActualList.contains(result));
 		
 	}
-
 }
-

@@ -3,19 +3,25 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="test.AssertOptimization.WorkStationGroupsClear"/>
-      <class name="test.AssertOptimization.WorkStationGroupsCURD"/>
-      <class name="test.AssertOptimization.WorkStationwithMissingScanField"/>
-      <class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsWithMissingSoftwareTag"/>
-      <class name="test.AssertOptimization.SoftwareDefinitationWithMissingNameField"/>
-      <class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsClear"/>
-      <class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsCURD"/>
-      <class name="test.AssertOptimization.SoftwareDefinitationWithMissingAssociatedProcessesField"/>
-      <class name="test.AssertOptimization.SoftwareDefinitationCURD"/>
-      <class name="test.AssertOptimization.WorkStationwithMissingNameFiled"/>
-      <class name="test.AssertOptimization.SoftwareDefinitionActivityTagEnableInSoftwareTagPage"/>
-      <class name="test.AssertOptimization.SoftwaredefinitionForActivityTagPresent"/>
-      <class name="test.AssertOptimization.SoftwareDefinitationClear"/>
+  	<class name="test.AssertOptimization.SoftwareDefinitionForSoftwareTagsPdf"/>
+	<class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsCURD"/>
+	<class name="test.AssertOptimization.SoftwareDefinitionPdfExport"/>
+	<class name="test.AssertOptimization.SoftwareDefinitationExcelExport"/>
+	<class name="test.AssertOptimization.SoftwareDefinitationWithMissingAssociatedProcessesField"/>
+	<class name="test.AssertOptimization.SoftwareDefinitationWithMissingNameField"/>
+	<class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsClear"/>
+	<class name="test.AssertOptimization.SoftwareDefinitationClear"/>
+	<class name="test.AssertOptimization.SoftwareDefinitationCURD"/>
+	<class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsWithMissingSoftwareTag"/>
+	<class name="test.AssertOptimization.WorkStationGroupsCURD"/>
+	<class name="test.AssertOptimization.WorkStationwithMissingNameFiled"/>
+	<class name="test.AssertOptimization.WorkStationwithMissingScanField"/>
+	<class name="test.AssertOptimization.SoftwaredefinitionForActivityTagPresent"/>
+	<class name="test.AssertOptimization.SoftwareDefinitionActivityTagEnableInSoftwareTagPage"/>
+	<class name="test.AssertOptimization.WorkStationPdfExport"/>
+	<class name="test.AssertOptimization.WorkStationExcelExport"/>
+	<class name="test.AssertOptimization.SoftwareDefinitionForSoftwareTagsExcelexport"/>
+	<class name="test.AssertOptimization.WorkStationGroupsClear"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

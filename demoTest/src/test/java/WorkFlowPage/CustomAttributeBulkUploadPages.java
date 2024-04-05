@@ -106,7 +106,7 @@ public class CustomAttributeBulkUploadPages {
 			WebElement  choose = this.chooseFileBtn;
 			choose.sendKeys(url);
 			this.upload.click();
-			return url;
+			return url; 
 
 		}
 	 public boolean clickSuccessMsg()

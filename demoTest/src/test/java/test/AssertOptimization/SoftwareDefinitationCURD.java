@@ -29,7 +29,8 @@ public class SoftwareDefinitationCURD extends BaseTest{
 	List<String> hostNameList = null;
 	List<String> hostNameExcelList = null;
 
-	@Test
+	
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void softwareDefinitation() throws InterruptedException, EncryptedDocumentException, IOException {
 		driver = initializeDriver6688();
 		 listeners.testStepDescription("Step 1: Login to ProHance Application");
@@ -63,7 +64,7 @@ public class SoftwareDefinitationCURD extends BaseTest{
 		boolean checkAdd = softwareDef.clickAddMsg();
 		System.out.println(checkAdd);
 		Assert.assertTrue(checkAdd);
-		
+	
 		listeners.testStepDescription("Step 13: Click on Popup Close icon");
 		softwareDef.clickCloseXIconBtn();
 		listeners.testStepDescription("Step 14: Click on Modify icon");

@@ -13,333 +13,382 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 public class SoftwareDefinitionPage {
-	
+
 	WebDriver driver;
-	
+
 	@FindBy(xpath = "//ul/li[contains(text(),'Software Definition')]")
 	WebElement softwareDefinition;
-	
+
 	@FindBy(xpath = "//label[contains(text(),\"ADD NEW\")]")
 	WebElement addNew;
-	
+
 	@FindBy(id = "softwareNameId")
 	WebElement name;
-	
+
 	@FindBy(id = "descriptionId")
 	WebElement des;
-	
+
 	@FindBy(id = "associatedProcessId")
 	WebElement associate;
-	
+
 	@FindBy(id = "class1")
 	WebElement activity;
-	
+
 	@FindBy(id = "ignoresoftwareId")
 	WebElement ignore;
-	
+
 	@FindBy(xpath = "//div[@class =\"tab-buttons\"]/input[2]")
 	WebElement save;
-	
+
 	@FindBy(xpath = "//span[@id=\"dialogsuccessspan\"]/span/span")
 	WebElement addMsg;
-	
+
 	@FindBy(xpath = "//span[@id=\"dialogsuccessspan\"]/span/span")
 	WebElement modifyMsg;
-	
+
 	@FindBy(xpath = "//span[@id=\"dialogsuccessspan\"]/span/span")
 	WebElement deleteMsg;
-	
+
 	@FindBy(xpath = "//span[@id=\"dialogsuccessspan\"]/span/a")
 	WebElement closeXIconBtn;
-	
+
 	@FindBy(xpath = "//div[contains(text(),\"automation_1\")]/../../td[1]/span[1]")
 	WebElement modifyBtn;
-	
+
 	@FindBy(xpath = "//div[contains(text(),\"automation_1\")]/../../td[1]/span[2]")
 	WebElement deleteBtn;
-	
+
 	@FindBy(xpath = "//button[contains(text(),'YES')]")
 	WebElement yesBtn;
-	
+
 	@FindBy(xpath = "//label[contains(text(),\"SOFTWARE TAGS\")]")
 	WebElement softwareTags;
-	
+
 	@FindBy(id = "name")
 	WebElement sName;
-	
+
 	@FindBy(id = "description")
 	WebElement sDescription;
-	
+
 	@FindBy(xpath = "//td[@class =\"tab-buttons\"]/input[2]")
 	WebElement sSave;
-	
+
 	@FindBy(xpath = "//td[@class =\"tab-buttons\"]/input[1]")
 	WebElement sClear;
-	
+
 	@FindBy(xpath = "//table[@id=\"CommonDataTableId\"]/tbody/tr[1]/td/span[1]")
 	WebElement sClearmodify;
-	
+
 	@FindBy(xpath = "//body[@class=\"modal-open\"]/div[4]/div/div/div[2]/div[2]")
 	WebElement popupMsg;
-	
+
 	@FindBy(xpath = "//label[contains(text(),\"SOFTWARE TAG CLASSIFICATION\")]")
 	WebElement softwatetab;
-	
+
 	@FindBy(xpath = "//table[@class =\"configtable table-bordered-tb\"]/tbody/tr[2]/td[2]/div/label")
 	WebElement activityTag;
-	
+
 	@FindBy(xpath = "//div[@id=\"SWTagsId\"]/div/div/div/div/div/div[2]/button")
 	WebElement cancelButton;
-	
+
 	@FindBy(xpath = "//select[@id=\"tagId\"]/option")
 	WebElement activityTagOption;
-	
+
 	@FindBy(xpath = "//td[contains(text(),\"Activity Tag\")]")
 	WebElement activitytag;
-	
+
 	@FindBy(xpath = "//table[@id =\"CommonDataTableId\"]/tbody/tr[1]/td[1]/span[1]")
 	WebElement modifyForactivity;
-	
-	@FindBy(xpath ="//div[@id=\"arrow-bot\"]/i")
+
+	@FindBy(xpath = "//div[@id=\"arrow-bot\"]/i")
 	WebElement bottomArrom;
-	
-	@FindBy(xpath ="//select[@id =\"class1\"]/option")
+
+	@FindBy(xpath = "//select[@id =\"class1\"]/option")
 	List<WebElement> activityList;
-	
+
+	@FindBy(xpath = "//img[@src='/phworkstation/images/excel.png']")
+	WebElement softeareDefinitionExcel;
+
+	@FindBy(xpath = "//img[@src='/phworkstation/images/pdf.png']")
+	WebElement softeareDefinitionPdf;
+
+	@FindBy(xpath = "//table[@id =\"CommonDataTableId\"]/tbody/tr/td[2]/div")
+	List<WebElement> softwareDefinitionList;
+
+	@FindBy(xpath = "//img[@src='/phworkstation/images/excel.png']")
+	WebElement softeareTagsExcel;
+
+	@FindBy(xpath = "//img[@src='/phworkstation/images/pdf.png']")
+	WebElement softeareTagsPdf;
+
+	@FindBy(xpath = "//table[@id =\"CommonDataTableId\"]/tbody/tr/td[3]/div")
+	List<WebElement> softeareTagsList;
+
 	public SoftwareDefinitionPage(WebDriver driver) {
 
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
-	
-	public void clickSoftwareDefinition()
-	{
-		this.softwareDefinition.click();
+
+	public void clickSoftwareDefinition() {
+		//this.softwareDefinition.click();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", this.softwareDefinition);
 	}
-	
-	public void clickAddNewBtn()
-	{
+
+	public void clickAddNewBtn() {
 		this.addNew.click();
 	}
-	public void clickName(String name)
-	{
+
+	public void clickName(String name) {
 		this.name.sendKeys(name);
 	}
-	
-	public void clickDescription(String def)
-	{
+
+	public void clickDescription(String def) {
 		this.des.sendKeys(def);
 	}
-	
-	public void clickAssociateProcess(String associate)
-	{
+
+	public void clickAssociateProcess(String associate) {
 		this.associate.sendKeys(associate);
 	}
+
 	public void selectTag(String activity) {
 		Select clickRole = new Select(this.activity);
 		clickRole.selectByVisibleText(activity);
 	}
-	
-	public void clickIgnoreChkBox()
-	{
+
+	public void clickIgnoreChkBox() {
 		this.ignore.click();
 	}
-	
-	public void clickSAVEBtn()
-	{
+
+	public void clickSAVEBtn() {
 		this.save.click();
 	}
-	public boolean clickAddMsg()
-	 {
-		 String ms = this.addMsg.getText();
-		 System.out.println(ms);
-			String msg = ms.replaceAll("\\s+", "");
-			 System.out.println(msg);
-			String compareMsg = "SoftwareDefinition:automation_1addedsuccessfully";
-			boolean check = msg.equals(compareMsg);
-			return check;
-	 }
-	
-	public boolean clickModifyMsg()
-	 {
-		 String ms = this.modifyMsg.getText();
-		 System.out.println(ms);
-			String msg = ms.replaceAll("\\s+", "");
-			String compareMsg = "SoftwareDefinition:automation_1modifiedsuccessfully";
-			boolean check = msg.equals(compareMsg);
-			return check;
-	 }
-	public boolean clickDeleteMsg()
-	 {
-		 String ms = this.deleteMsg.getText();
-		 System.out.println(ms);
-			String msg = ms.replaceAll("\\s+", "");
-			String compareMsg = "SoftwareDefinition:automation_1deletedsuccessfully";
-			boolean check = msg.equals(compareMsg);
-			return check;
-	 }
-	
-	public boolean clicksAddMsg()
-	 {
-		 String ms = this.addMsg.getText();
-		 System.out.println(ms);
-			String msg = ms.replaceAll("\\s+", "");
-			 System.out.println(msg);
-			String compareMsg = "SoftwareTag:automation_1addedsuccessfully";
-			boolean check = msg.equals(compareMsg);
-			return check;
-	 }
-	
-	public boolean clicksModifyMsg()
-	 {
-		 String ms = this.modifyMsg.getText();
-		 System.out.println(ms);
-			String msg = ms.replaceAll("\\s+", "");
-			String compareMsg = "SoftwareTag:automation_1modifiedsuccessfully";
-			boolean check = msg.equals(compareMsg);
-			return check;
-	 }
-	public boolean clicksDeleteMsg()
-	 {
-		 String ms = this.deleteMsg.getText();
-		 System.out.println(ms);
-			String msg = ms.replaceAll("\\s+", "");
-			String compareMsg = "SoftwareTag:automation_1deletedsuccessfully";
-			boolean check = msg.equals(compareMsg);
-			return check;
-	 }
 
-	public void clickCloseXIconBtn()
-	{
+	public boolean clickAddMsg() {
+		String ms = this.addMsg.getText();
+		System.out.println(ms);
+		String msg = ms.replaceAll("\\s+", "");
+		System.out.println(msg);
+		String compareMsg = "SoftwareDefinition:automation_1addedsuccessfully";
+		boolean check = msg.equals(compareMsg);
+		return check;
+	}
+
+	public boolean clickModifyMsg() {
+		String ms = this.modifyMsg.getText();
+		System.out.println(ms);
+		String msg = ms.replaceAll("\\s+", "");
+		String compareMsg = "SoftwareDefinition:automation_1modifiedsuccessfully";
+		boolean check = msg.equals(compareMsg);
+		return check;
+	}
+
+	public boolean clickDeleteMsg() {
+		String ms = this.deleteMsg.getText();
+		System.out.println(ms);
+		String msg = ms.replaceAll("\\s+", "");
+		String compareMsg = "SoftwareDefinition:automation_1deletedsuccessfully";
+		boolean check = msg.equals(compareMsg);
+		return check;
+	}
+
+	public boolean clicksAddMsg() {
+		String ms = this.addMsg.getText();
+		System.out.println(ms);
+		String msg = ms.replaceAll("\\s+", "");
+		System.out.println(msg);
+		String compareMsg = "SoftwareTag:automation_1addedsuccessfully";
+		boolean check = msg.equals(compareMsg);
+		return check;
+	}
+
+	public boolean clicksModifyMsg() {
+		String ms = this.modifyMsg.getText();
+		System.out.println(ms);
+		String msg = ms.replaceAll("\\s+", "");
+		String compareMsg = "SoftwareTag:automation_1modifiedsuccessfully";
+		boolean check = msg.equals(compareMsg);
+		return check;
+	}
+
+	public boolean clicksDeleteMsg() {
+		String ms = this.deleteMsg.getText();
+		System.out.println(ms);
+		String msg = ms.replaceAll("\\s+", "");
+		String compareMsg = "SoftwareTag:automation_1deletedsuccessfully";
+		boolean check = msg.equals(compareMsg);
+		return check;
+	}
+
+	public void clickCloseXIconBtn() {
 		this.closeXIconBtn.click();
 	}
-	public void clickModifyBtn()
-	{
+
+	public void clickModifyBtn() {
 		this.modifyBtn.click();
 	}
-	
-	public void clickDeleteBtn()
-	{
+
+	public void clickDeleteBtn() {
 		this.deleteBtn.click();
 	}
 	
+
 	public void clickYESBtn() {
 		this.yesBtn.click();
 	}
-	
-	public void clikSoftwareTagsBtn()
-	{
-		//this.softwareTags.click();
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
-		  executor.executeScript("arguments[0].click();", this.softwareTags);
+
+	public void clikSoftwareTagsBtn() {
+		// this.softwareTags.click();
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", this.softwareTags);
 	}
-	
-	public String clickSName(String name)
-	{
+
+	public String clickSName(String name) {
 		this.sName.sendKeys(name);
 		return name;
 	}
-	
-	public void clickSDescription(String des)
-	{
+
+	public void clickSDescription(String des) {
 		this.sDescription.sendKeys(des);
 	}
-	public void clickSDescriptionForModify()
-	{
+
+	public void clickSDescriptionForModify() {
 		this.sDescription.clear();
 	}
-	
-	public void clicksSAVEBtn()
-	{
+
+	public void clicksSAVEBtn() {
 		this.sSave.click();
 	}
-	
-	public void sClearmodify()
-	{
+
+	public void sClearmodify() {
 		this.sClearmodify.click();
 	}
-	
-	public void clicksCLEARBtn()
-	{
+
+	public void clicksCLEARBtn() {
 		this.sClear.click();
 	}
-	public boolean clickSoftwareRequiredMsg() throws InterruptedException
-	 {
+
+	public boolean clickSoftwareRequiredMsg() throws InterruptedException {
 		System.out.println("check");
 		Thread.sleep(2000);
-		 String ms = this.popupMsg.getText();
-		 System.out.println(this.popupMsg.getText());
-			String msg = ms.replaceAll("\\s+", "");
-			System.out.println(msg);
-			String compareMsg = "SoftwareTagisrequiredinformation";
-			boolean check = msg.equals(compareMsg);
-			return check;
-	 }
-	public boolean clickAssociateRequiredMsg() throws InterruptedException
-	 {
+		String ms = this.popupMsg.getText();
+		System.out.println(this.popupMsg.getText());
+		String msg = ms.replaceAll("\\s+", "");
+		System.out.println(msg);
+		String compareMsg = "SoftwareTagisrequiredinformation";
+		boolean check = msg.equals(compareMsg);
+		return check;
+	}
+
+	public boolean clickAssociateRequiredMsg() throws InterruptedException {
 		System.out.println("check");
 		Thread.sleep(2000);
-		 String ms = this.popupMsg.getText();
-		 System.out.println(this.popupMsg.getText());
-			String msg = ms.replaceAll("\\s+", "");
-			System.out.println(msg);
-			String compareMsg = "AssociatedProcessesisrequiredinformation";
-			boolean check = msg.equals(compareMsg);
-			return check;
-	 }
-	public void clickSoftwareTabBtn()
-	{
+		String ms = this.popupMsg.getText();
+		System.out.println(this.popupMsg.getText());
+		String msg = ms.replaceAll("\\s+", "");
+		System.out.println(msg);
+		String compareMsg = "AssociatedProcessesisrequiredinformation";
+		boolean check = msg.equals(compareMsg);
+		return check;
+	}
+
+	public void clickSoftwareTabBtn() {
 		this.softwatetab.click();
 	}
-	
-	public boolean clickActivityTab()
-	{
+
+	public boolean clickActivityTab() {
 		boolean check1 = this.activityTag.isEnabled();
 		System.out.println(check1);
 		return check1;
-		
+
 	}
-	public void clickCancelButton()
-	{
+
+	public void clickCancelButton() {
 		this.cancelButton.click();
 	}
-	public boolean clickActivityTagOption()
-	{
+
+	public boolean clickActivityTagOption() {
 		boolean check = this.activityTagOption.isDisplayed();
 		System.out.println(check);
 		return check;
 	}
-	
-	public boolean clickActivityTag()
-	{
+
+	public boolean clickActivityTag() {
 		boolean check = this.activitytag.isDisplayed();
 		System.out.println(check);
 		return check;
 	}
-	
-	public void clickModifyForactivity()
-	{
+
+	public void clickModifyForactivity() {
 		this.modifyForactivity.click();
 	}
-	
-	public void clickBottomBtn()
-	{
+
+	public void clickBottomBtn() {
 		this.bottomArrom.click();
 	}
-	public  List<String> getWorkProfilesName()
-	 {
-		 List <WebElement> col = null;
-		 List<String> teamsList = new ArrayList();
-		 col = this.activityList;
-		 int len = col.size();
-		  for(int i = 1;i<len;i++)
-		  {
-			  teamsList.add(this.activityList.get(i).getText().replaceAll("\\s+",""));
-			 
-		  }
-		 System.out.println(teamsList);
-		  return teamsList;
-	 }
-	 
+
+	public List<String> getWorkProfilesName() {
+		List<WebElement> col = null;
+		List<String> teamsList = new ArrayList();
+		col = this.activityList;
+		int len = col.size();
+		for (int i = 1; i < len; i++) {
+			teamsList.add(this.activityList.get(i).getText().replaceAll("\\s+", ""));
+
+		}
+		System.out.println(teamsList);
+		return teamsList;
+	}
+
+	public void clickSoftwareDefinitionPdf() {
+		this.softeareDefinitionPdf.click();
+
+	}
+
+	public void clickSoftwareDefinitionExcel() {
+		this.softeareDefinitionExcel.click();
+	}
+
+	public void clickSoftwareTagsPdf() {
+		this.softeareTagsPdf.click();
+	}
+
+	public void clickSoftwaretagsExcel() {
+		this.softeareTagsExcel.click();
+	}
+
+	public List<String> getSoftwareDefinitionList() throws InterruptedException {
+
+		List<WebElement> col = null;
+		List<String> teamsList = new ArrayList();
+		col = this.softwareDefinitionList;
+		int len = col.size();
+		System.out.println(len);
+		Thread.sleep(1000);
+		for (int i = 0; i < len; i++) {
+			teamsList.add(this.softwareDefinitionList.get(i).getText().replaceAll("\\s+", ""));
+			// System.out.println( teamsList.add(this.getUserArrtribute.get(i).getText()));
+		}
+		System.out.println(teamsList);
+		return teamsList;
+	}
+
+	public List<String> getSoftwareTagsList() throws InterruptedException {
+
+		List<WebElement> col = null;
+		List<String> teamsList = new ArrayList();
+		col = this.softeareTagsList;
+		int len = col.size();
+		System.out.println(len);
+		Thread.sleep(1000);
+		for (int i = 0; i < len; i++) {
+			teamsList.add(this.softeareTagsList.get(i).getText().replaceAll("\\s+", ""));
+			// System.out.println( teamsList.add(this.getUserArrtribute.get(i).getText()));
+		}
+		System.out.println(teamsList);
+		return teamsList;
+	}
+
 }

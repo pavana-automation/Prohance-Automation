@@ -6,12 +6,30 @@
   </listeners>
   <test thread-count="7" name="Test(failed)">
     <classes>
-      <class name="test.WorkProfile.WorkProfilesDeleteWithDependency">
+      <class name="test.DataAggregation.DataAggregation">
         <methods>
           <include name="teardown"/>
-          <include name="cloneOnWorkProfiles"/>
+          <include name="aggregationForSingleType"/>
         </methods>
-      </class> <!-- test.WorkProfile.WorkProfilesDeleteWithDependency -->
+      </class> <!-- test.DataAggregation.DataAggregation -->
+      <class name="test.AOS.AOSBulkUpload">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosBulkUpload"/>
+        </methods>
+      </class> <!-- test.AOS.AOSBulkUpload -->
+      <class name="test.WorkProfile.WorkProfileForDelete">
+        <methods>
+          <include name="teardown"/>
+          <include name="deletionOnWorkProfiles"/>
+        </methods>
+      </class> <!-- test.WorkProfile.WorkProfileForDelete -->
+      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerDontAllowUserToExportDataXLS"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS -->
       <class name="test.DataAggregation.DataAggregationForAllType">
         <methods>
           <include name="teardown"/>
@@ -24,24 +42,60 @@
           <include name="aosUnknownApplicationAddingtoExistingQualifierText"/>
         </methods>
       </class> <!-- test.AOS.AOSUnknownApplicationAddingtoExistingQualifierText -->
-      <class name="UserRoles.UserRolesModifyManagerEditActivityRating">
+      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2">
         <methods>
           <include name="teardown"/>
-          <include name="userRolesModifyManagerEditActivityRating"/>
+          <include name="userRolesModifyManagerDontAllowUserToExportDataPDF2"/>
         </methods>
-      </class> <!-- UserRoles.UserRolesModifyManagerEditActivityRating -->
-      <class name="test.AOS.AOSBulkUploadModify">
+      </class> <!-- UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2 -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName">
         <methods>
           <include name="teardown"/>
-          <include name="aosBulkUploadModify"/>
+          <include name="aosUnknownApplicationAddingtoCreateNewProcessName"/>
         </methods>
-      </class> <!-- test.AOS.AOSBulkUploadModify -->
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName -->
+      <class name="test.WorkProfile.WorkProfilesExcelValidation">
+        <methods>
+          <include name="teardown"/>
+          <include name="cloneOnWorkProfiles"/>
+        </methods>
+      </class> <!-- test.WorkProfile.WorkProfilesExcelValidation -->
+      <class name="test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton">
+        <methods>
+          <include name="teardown"/>
+          <include name="modificationOnSettingsTabForClearButton"/>
+        </methods>
+      </class> <!-- test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton -->
       <class name="test.AOS.AOSModifyFunction">
         <methods>
           <include name="teardown"/>
           <include name="a0sModifyFunction"/>
         </methods>
       </class> <!-- test.AOS.AOSModifyFunction -->
+      <class name="UserRoles.UserRolesAddNewManagerDelete">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesAddNewManagerDelete"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesAddNewManagerDelete -->
+      <class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerAllowUserToExportDataXLS"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS -->
+      <class name="test.DataAggregation.DataAggregationForModificationOnSettingsTab">
+        <methods>
+          <include name="teardown"/>
+          <include name="modificationOnSettingsTab"/>
+        </methods>
+      </class> <!-- test.DataAggregation.DataAggregationForModificationOnSettingsTab -->
+      <class name="test.WorkProfile.WorkProfileForAddingNew">
+        <methods>
+          <include name="teardown"/>
+          <include name="AddingNewWorkProfiles"/>
+        </methods>
+      </class> <!-- test.WorkProfile.WorkProfileForAddingNew -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [MultipleSuite] -->

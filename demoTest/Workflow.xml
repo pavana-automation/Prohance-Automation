@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite  name="MultipleSuite" thread-count="7">
+		<listeners>
+		<listener class-name="test.Listeners"></listener>
+		
+	</listeners>
+	
+ <test thread-count="7" name="Test">
+    <classes>
+  <class name="test.WorkFlow.CustomAttributeWithFilterbyProcess"/>
+      <class name="test.WorkFlow.CustomAttributeWithDeleteWithDependency"/>
+      <class name="test.WorkFlow.CustomAttributeWithModifyFieldType"/>
+      <class name="test.WorkFlow.CustomAttributeWithMissingField"/>
+      <class name="test.WorkFlow.CustomAttributeBulkUpload"/>
+     <class name="test.WorkFlow.CustomAttributeWithDuplicateName"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
