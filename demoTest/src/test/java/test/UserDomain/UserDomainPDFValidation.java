@@ -29,6 +29,7 @@ public class UserDomainPDFValidation extends BaseTest{
 	public void pdf() throws IOException, InterruptedException { 
 	
 	listeners.testStepDescription("Step 1: Login into the prohance application");
+	//driver=initializeDriverMysql();
 	driver=initializeDriver3333();
 	loginPage.clickLogin("adminp","1");
 	

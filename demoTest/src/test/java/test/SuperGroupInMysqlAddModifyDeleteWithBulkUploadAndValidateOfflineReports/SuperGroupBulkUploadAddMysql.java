@@ -42,32 +42,32 @@ public class SuperGroupBulkUploadAddMysql extends BaseTest
 	{
 		driver = initializeDriverMysql();
 
-		//listeners.testStepDescription("Login Into Prohance Application");
+		listeners.testStepDescription("Login Into Prohance Application");
 		loginPage.clickLogin(GenderalVariables.adminUserName, GenderalVariables.adminPassword);
 		SideNavigationMenuPage.clickSideNavigationBtn();
 
-		//listeners.testStepDescription("Navigate Users > Funtions in Side Menu Bar");
+		listeners.testStepDescription("Navigate Users > Funtions in Side Menu Bar");
 		SideNavigationMenuPage.clickUsersBtn();
 		Thread.sleep(2000);
 		SuperGroupMysqlPage.clickFuntionsTab();
 		CategoryPage.selectFrame();
 
-		//listeners.testStepDescription("Navigate to SuperGroup BulkUpload");
+		listeners.testStepDescription("Navigate to SuperGroup BulkUpload");
 		SuperGroupMysqlPage.clickBulkUploadBtn();
 		SuperGroupMysqlPage.selectBlankTemplateChkBx();
 
-		//listeners.testStepDescription("Download the Blank Template");
+		listeners.testStepDescription("Download the Blank Template");
 		SuperGroupMysqlPage.clickHereDownloadTemplate();
 
-		//listeners.testStepDescription("Add SuperGroup in BulkUpload");
+		listeners.testStepDescription("Add SuperGroup in BulkUpload");
 		List<String> addBulckUploadData = SuperGroupMysqlPage.addSuperGroupNamesExcelBulckUpload();
 		SuperGroupMysqlPage.clickChooseFileInBulkUpload();
 
-		//listeners.testStepDescription("Validate the alert Message");
+		listeners.testStepDescription("Validate the alert Message");
 		ActivityTagsPage.validateBulkUploadAddMessage();
 		SuperGroupMysqlPage.clickBackBtnInBulkUpload();
 
-		//listeners.testStepDescription("Validate SuperGroup is Added in SuperGroup Table");
+		listeners.testStepDescription("Validate SuperGroup is Added in SuperGroup Table");
 		List<String> webSuperGroupNameDataList = SuperGroupMysqlPage.getWebSuperGroupData();
 
 		addBulckUploadData.stream().skip(0).forEach(data -> {

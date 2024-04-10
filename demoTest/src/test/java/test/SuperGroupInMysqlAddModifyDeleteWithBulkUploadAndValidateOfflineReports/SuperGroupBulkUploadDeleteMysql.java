@@ -39,39 +39,39 @@ public class SuperGroupBulkUploadDeleteMysql extends BaseTest
 	Listeners				listeners				= new Listeners();
 
 	SoftAssert				softAssert				= new SoftAssert();
-//(retryAnalyzer = Pages.RetryAnalyzer.class)
-	@Test
+
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void superGroupBulkUploadDelete() throws InterruptedException, IOException
 	{
 		driver = initializeDriverMysql();
 		
-		//listeners.testStepDescription("Login Into Prohance Application");
+		listeners.testStepDescription("Login Into Prohance Application");
 		loginPage.clickLogin(GenderalVariables.adminUserName, GenderalVariables.adminPassword);
 		SideNavigationMenuPage.clickSideNavigationBtn();
 		
-		//listeners.testStepDescription("Navigate Users > Funtions in Side Menu Bar");
+		listeners.testStepDescription("Navigate Users > Funtions in Side Menu Bar");
 		SideNavigationMenuPage.clickUsersBtn();
 		Thread.sleep(2000);
 		SuperGroupMysqlPage.clickFuntionsTab();
 		CategoryPage.selectFrame();
 		
-		//listeners.testStepDescription("Navigate to SuperGroup BulkUpload");
+		listeners.testStepDescription("Navigate to SuperGroup BulkUpload");
 		SuperGroupMysqlPage.clickBulkUploadBtn();
 		
-		//listeners.testStepDescription("Download the Prefilled Template");
+		listeners.testStepDescription("Download the Prefilled Template");
 		SuperGroupMysqlPage.selectWithPrefilledDataChkBx();
 		SuperGroupMysqlPage.clickHereDownloadTemplate();
 		
-		//listeners.testStepDescription("Delete the SuperGroup in BulkUpload");
+		listeners.testStepDescription("Delete the SuperGroup in BulkUpload");
 		SuperGroupMysqlPage.deleteSuperGroupExcelBulckUpload(superGroupNameModify);
 		SuperGroupMysqlPage.clickChooseFileInBulkUpload();
 		
-		//listeners.testStepDescription("Validate the alert Message");
+		listeners.testStepDescription("Validate the alert Message");
 		ActivityTagsPage.validateBulkUploadAddMessage();
 		SuperGroupMysqlPage.clickBackBtnInBulkUpload();
 		List<String> webSuperGroupNameDataList = SuperGroupMysqlPage.getWebSuperGroupData();
 		
-		//listeners.testStepDescription("Validate SuperGroup is Deleted in SuperGroup Table");
+		listeners.testStepDescription("Validate SuperGroup is Deleted in SuperGroup Table");
 		softAssert.assertFalse(webSuperGroupNameDataList.contains(superGroupNameModify));
 		softAssert.assertFalse(webSuperGroupNameDataList.contains(superGroupNameModify));
 		webSuperGroupNameDataList.clear();

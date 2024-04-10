@@ -569,7 +569,7 @@ public class ReadXLSdata extends BaseTest {
 		System.out.println("row :" + totalRows);
 
 		newRow.createCell(0).setCellValue("ADD");
-		newRow.createCell(3).setCellValue("aaaaaaautomation221");
+		newRow.createCell(3).setCellValue("aa1au");
 		newRow.createCell(4).setCellValue("Text Box");
 		newRow.createCell(5).setCellValue("5");
 		newRow.createCell(6).setCellValue("Alpha-Numeric");
@@ -581,7 +581,7 @@ public class ReadXLSdata extends BaseTest {
 		sheetName.getRow(17).getCell(0).setCellValue("MOD");
 		System.out.println("MOd");
 		sheetName.getRow(17).getCell(5).setCellValue("13");
-		sheetName.getRow(6).getCell(0).setCellValue("DEL");
+		sheetName.getRow(5).getCell(0).setCellValue("DEL");
 
 		try {
 

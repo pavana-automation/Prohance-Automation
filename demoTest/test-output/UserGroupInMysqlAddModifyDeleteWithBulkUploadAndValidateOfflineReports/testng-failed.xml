@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="test.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.AddUserGroupInMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="addUserGroupInMysql"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.AddUserGroupInMysql -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.PDFDataValidationForUserGroupTable">
+        <methods>
+          <include name="teardown"/>
+          <include name="pdfValidationUserGroupInMysql"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.PDFDataValidationForUserGroupTable -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ModifyUserGroupInMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="modifyUserGroupInMysql"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ModifyUserGroupInMysql -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadDeleteMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="deleteUserGroupInMysql"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadDeleteMysql -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ExcelDataValidationForUserGroupTable">
+        <methods>
+          <include name="excelValidateUserGroupInMysql"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ExcelDataValidationForUserGroupTable -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadAddMysql">
+        <methods>
+          <include name="addUserGroupInMysql"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadAddMysql -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadModifyMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="modifyUserGroupInMysql"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadModifyMysql -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.DeleteUserGroupInMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="deleteUserGroupInMysql"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.DeleteUserGroupInMysql -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports] -->

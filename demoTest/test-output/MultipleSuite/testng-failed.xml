@@ -6,96 +6,546 @@
   </listeners>
   <test thread-count="7" name="Test(failed)">
     <classes>
-      <class name="test.DataAggregation.DataAggregation">
-        <methods>
-          <include name="teardown"/>
-          <include name="aggregationForSingleType"/>
-        </methods>
-      </class> <!-- test.DataAggregation.DataAggregation -->
-      <class name="test.AOS.AOSBulkUpload">
-        <methods>
-          <include name="teardown"/>
-          <include name="aosBulkUpload"/>
-        </methods>
-      </class> <!-- test.AOS.AOSBulkUpload -->
-      <class name="test.WorkProfile.WorkProfileForDelete">
-        <methods>
-          <include name="teardown"/>
-          <include name="deletionOnWorkProfiles"/>
-        </methods>
-      </class> <!-- test.WorkProfile.WorkProfileForDelete -->
-      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS">
-        <methods>
-          <include name="teardown"/>
-          <include name="userRolesModifyManagerDontAllowUserToExportDataXLS"/>
-        </methods>
-      </class> <!-- UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS -->
-      <class name="test.DataAggregation.DataAggregationForAllType">
-        <methods>
-          <include name="teardown"/>
-          <include name="alltypeValidation"/>
-        </methods>
-      </class> <!-- test.DataAggregation.DataAggregationForAllType -->
-      <class name="test.AOS.AOSUnknownApplicationAddingtoExistingQualifierText">
-        <methods>
-          <include name="teardown"/>
-          <include name="aosUnknownApplicationAddingtoExistingQualifierText"/>
-        </methods>
-      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoExistingQualifierText -->
-      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2">
-        <methods>
-          <include name="teardown"/>
-          <include name="userRolesModifyManagerDontAllowUserToExportDataPDF2"/>
-        </methods>
-      </class> <!-- UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2 -->
-      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName">
-        <methods>
-          <include name="teardown"/>
-          <include name="aosUnknownApplicationAddingtoCreateNewProcessName"/>
-        </methods>
-      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName -->
-      <class name="test.WorkProfile.WorkProfilesExcelValidation">
+      <class name="test.WorkProfile.WorkProfileValidateWithTeams">
         <methods>
           <include name="teardown"/>
           <include name="cloneOnWorkProfiles"/>
         </methods>
-      </class> <!-- test.WorkProfile.WorkProfilesExcelValidation -->
-      <class name="test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton">
+      </class> <!-- test.WorkProfile.WorkProfileValidateWithTeams -->
+      <class name="test.UserDomain.UserDomainSortingFuncton">
         <methods>
           <include name="teardown"/>
-          <include name="modificationOnSettingsTabForClearButton"/>
+          <include name="sortingFunction"/>
         </methods>
-      </class> <!-- test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton -->
-      <class name="test.AOS.AOSModifyFunction">
+      </class> <!-- test.UserDomain.UserDomainSortingFuncton -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.AddUserGroupInMysql">
         <methods>
           <include name="teardown"/>
-          <include name="a0sModifyFunction"/>
+          <include name="addUserGroupInMysql"/>
         </methods>
-      </class> <!-- test.AOS.AOSModifyFunction -->
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.AddUserGroupInMysql -->
+      <class name="test.CategoriesCategory.AddCategory">
+        <methods>
+          <include name="teardown"/>
+          <include name="addCategory"/>
+        </methods>
+      </class> <!-- test.CategoriesCategory.AddCategory -->
+      <class name="test.WorkTemplateAddModifyDelete.WorkTemplateModify">
+        <methods>
+          <include name="teardown"/>
+          <include name="workTemplateModify"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.WorkTemplateModify -->
       <class name="UserRoles.UserRolesAddNewManagerDelete">
         <methods>
           <include name="teardown"/>
           <include name="userRolesAddNewManagerDelete"/>
         </methods>
       </class> <!-- UserRoles.UserRolesAddNewManagerDelete -->
-      <class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS">
+      <class name="test.DataAggregation.DataAggregationForAllType">
         <methods>
           <include name="teardown"/>
-          <include name="userRolesModifyManagerAllowUserToExportDataXLS"/>
+          <include name="alltypeValidation"/>
         </methods>
-      </class> <!-- UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS -->
+      </class> <!-- test.DataAggregation.DataAggregationForAllType -->
+      <class name="test.WorkTemplateAddModifyDelete.DayTypeAddDuplicateValidation">
+        <methods>
+          <include name="addDuplicateValidation"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.DayTypeAddDuplicateValidation -->
+      <class name="test.AOS.AOSAddNew">
+        <methods>
+          <include name="teardown"/>
+          <include name="addNewFunction"/>
+        </methods>
+      </class> <!-- test.AOS.AOSAddNew -->
+      <class name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadModify">
+        <methods>
+          <include name="teardown"/>
+          <include name="activityTagsBulkUploadModify"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadModify -->
+      <class name="test.CategoriesCategory.ModifyCategory">
+        <methods>
+          <include name="teardown"/>
+          <include name="modifyCategory"/>
+        </methods>
+      </class> <!-- test.CategoriesCategory.ModifyCategory -->
+      <class name="test.CategoriesActivityTagsNewOrg.ModifyActivityTag">
+        <methods>
+          <include name="teardown"/>
+          <include name="modifyActivityTag"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.ModifyActivityTag -->
+      <class name="UserRoles.UserRoleSorting">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRoleSorting"/>
+        </methods>
+      </class> <!-- UserRoles.UserRoleSorting -->
+      <class name="test.CategoriesActivityTagsNewOrg.DeleteActivityTag">
+        <methods>
+          <include name="teardown"/>
+          <include name="deleteActivityTag"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.DeleteActivityTag -->
+      <class name="test.AOS.AOSBulkUploadModify">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosBulkUploadModify"/>
+        </methods>
+      </class> <!-- test.AOS.AOSBulkUploadModify -->
+      <class name="test.DataAggregation.DataAggregation">
+        <methods>
+          <include name="teardown"/>
+          <include name="aggregationForSingleType"/>
+        </methods>
+      </class> <!-- test.DataAggregation.DataAggregation -->
+      <class name="test.AOS.AOSModifyFunction">
+        <methods>
+          <include name="teardown"/>
+          <include name="a0sModifyFunction"/>
+        </methods>
+      </class> <!-- test.AOS.AOSModifyFunction -->
+      <class name="UserRoles.UserRolesModifyManagerToMeber">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerToMeber"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerToMeber -->
       <class name="test.DataAggregation.DataAggregationForModificationOnSettingsTab">
         <methods>
           <include name="teardown"/>
           <include name="modificationOnSettingsTab"/>
         </methods>
       </class> <!-- test.DataAggregation.DataAggregationForModificationOnSettingsTab -->
+      <class name="test.WorkTemplateAddModifyDelete.WorkTemplateDefineDayTypesAdd">
+        <methods>
+          <include name="teardown"/>
+          <include name="defineDayTypeAdd"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.WorkTemplateDefineDayTypesAdd -->
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.DeleteSuperGroupInMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="deleteSuperGroupInMysql"/>
+        </methods>
+      </class> <!-- test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.DeleteSuperGroupInMysql -->
+      <class name="test.UserDomain.UserDomainPDFValidation">
+        <methods>
+          <include name="teardown"/>
+          <include name="pdf"/>
+        </methods>
+      </class> <!-- test.UserDomain.UserDomainPDFValidation -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoExistingProcessName">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosUnknownApplicationAddingtoExistingProcessName"/>
+        </methods>
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoExistingProcessName -->
+      <class name="UserRoles.UserRolePDFValidation">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolePDFValidation"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolePDFValidation -->
+      <class name="test.WorkTemplateAddModifyDelete.EmptyDayTypeAndAliasValidation">
+        <methods>
+          <include name="teardown"/>
+          <include name="emptyDayTypeAndAliasValidation"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.EmptyDayTypeAndAliasValidation -->
+      <class name="test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton">
+        <methods>
+          <include name="teardown"/>
+          <include name="modificationOnSettingsTabForClearButton"/>
+        </methods>
+      </class> <!-- test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNew">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosUnknownApplicationAddingtoCreateNew"/>
+        </methods>
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNew -->
       <class name="test.WorkProfile.WorkProfileForAddingNew">
         <methods>
           <include name="teardown"/>
           <include name="AddingNewWorkProfiles"/>
         </methods>
       </class> <!-- test.WorkProfile.WorkProfileForAddingNew -->
+      <class name="UserRoles.UserRolesModifyMemberHierarchyLevel">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyMemberHierarchyLevel"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyMemberHierarchyLevel -->
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.PDFDataValidationForSuperGroupTable">
+        <methods>
+          <include name="teardown"/>
+          <include name="pdfValidationForSuperGroupTableInMysql"/>
+        </methods>
+      </class> <!-- test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.PDFDataValidationForSuperGroupTable -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ModifyUserGroupInMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="modifyUserGroupInMysql"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ModifyUserGroupInMysql -->
+      <class name="test.CategoriesActivityTagsNewOrg.PDFValidationForActivityTags">
+        <methods>
+          <include name="teardown"/>
+          <include name="PDFvalidationForActivityTags"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.PDFValidationForActivityTags -->
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.SuperGroupBulkUploadDeleteMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="superGroupBulkUploadDelete"/>
+        </methods>
+      </class> <!-- test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.SuperGroupBulkUploadDeleteMysql -->
+      <class name="test.CategoriesCategory.DeleteCategory">
+        <methods>
+          <include name="deleteCategory"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.CategoriesCategory.DeleteCategory -->
+      <class name="test.WorkProfile.WorkProfilesForClone">
+        <methods>
+          <include name="teardown"/>
+          <include name="cloneOnWorkProfiles"/>
+        </methods>
+      </class> <!-- test.WorkProfile.WorkProfilesForClone -->
+      <class name="UserRoles.UserRolesModifyManagerModuleSelection">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerModuleSelection"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerModuleSelection -->
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.SuperGroupBulkUploadModifyMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="superGroupBulkUploadModify"/>
+        </methods>
+      </class> <!-- test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.SuperGroupBulkUploadModifyMysql -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ExcelDataValidationForUserGroupTable">
+        <methods>
+          <include name="excelValidateUserGroupInMysql"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ExcelDataValidationForUserGroupTable -->
+      <class name="test.CategoriesActivityTagsNewOrg.ExcelDataValidationForActivityTags">
+        <methods>
+          <include name="teardown"/>
+          <include name="excelDataValidationForActivityTags"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.ExcelDataValidationForActivityTags -->
+      <class name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadDelete">
+        <methods>
+          <include name="teardown"/>
+          <include name="activityTagsBulkUploadDelete"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadDelete -->
+      <class name="UserRoles.UserRolesModifyMemberModuleSelection">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyMemberModuleSelection"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyMemberModuleSelection -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoExisting">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosUnknownApplicationAddingtoExisting"/>
+        </methods>
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoExisting -->
+      <class name="test.AOS.AOSBulkUploadDelete">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosBulkUploadDelete"/>
+        </methods>
+      </class> <!-- test.AOS.AOSBulkUploadDelete -->
+      <class name="test.WorkProfile.WorkProfilesDeleteWithDependency">
+        <methods>
+          <include name="teardown"/>
+          <include name="cloneOnWorkProfiles"/>
+        </methods>
+      </class> <!-- test.WorkProfile.WorkProfilesDeleteWithDependency -->
+      <class name="UserRoles.UserRolesAddNewManager">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesAddNewManager"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesAddNewManager -->
+      <class name="UserRoles.UserRoleExcelValidation">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRoleExcelValidation"/>
+        </methods>
+      </class> <!-- UserRoles.UserRoleExcelValidation -->
+      <class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataPDF">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerAllowUserToExportDataPDF"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerAllowUserToExportDataPDF -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewQualifierText">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosUnknownApplicationAddingtoCreateNewQualifierText"/>
+        </methods>
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNewQualifierText -->
+      <class name="test.AOS.AOSBulkUpload">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosBulkUpload"/>
+        </methods>
+      </class> <!-- test.AOS.AOSBulkUpload -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadAddMysql">
+        <methods>
+          <include name="addUserGroupInMysql"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadAddMysql -->
+      <class name="test.WorkTemplateAddModifyDelete.WorkTemplateValidateRecordsToDisplay">
+        <methods>
+          <include name="workTemplatePDFValidation"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.WorkTemplateValidateRecordsToDisplay -->
+      <class name="test.UserDomain.UserDomainModify">
+        <methods>
+          <include name="teardown"/>
+          <include name="modifyFunction"/>
+        </methods>
+      </class> <!-- test.UserDomain.UserDomainModify -->
+      <class name="test.UserDomain.UserDomainAddFunction">
+        <methods>
+          <include name="teardown"/>
+          <include name="addNewFunction"/>
+        </methods>
+      </class> <!-- test.UserDomain.UserDomainAddFunction -->
+      <class name="UserRoles.UserRolesModifyManagerHierarchyLevel">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerHierarchyLevel"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerHierarchyLevel -->
+      <class name="test.WorkTemplateAddModifyDelete.WorkTemplatePDFValidation">
+        <methods>
+          <include name="workTemplatePDFValidation"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.WorkTemplatePDFValidation -->
+      <class name="test.WorkTemplateAddModifyDelete.DefineDayTypeClearButtonValditaion">
+        <methods>
+          <include name="teardown"/>
+          <include name="validateClearButton"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.DefineDayTypeClearButtonValditaion -->
+      <class name="test.WorkProfile.WorkProfileForModification">
+        <methods>
+          <include name="teardown"/>
+          <include name="modificationOnWorkProfiles"/>
+        </methods>
+      </class> <!-- test.WorkProfile.WorkProfileForModification -->
+      <class name="test.UserDomain.UserDomainDeleteFunction">
+        <methods>
+          <include name="teardown"/>
+          <include name="deleteNewFunction"/>
+        </methods>
+      </class> <!-- test.UserDomain.UserDomainDeleteFunction -->
+      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerDontAllowUserToExportDataXLS"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS -->
+      <class name="UserRoles.UserRolesAddNewMemberDelete">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesAddNewMemberDelete"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesAddNewMemberDelete -->
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.SuperGroupBulkUploadAddMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="superGroupBulkUploadAdd"/>
+        </methods>
+      </class> <!-- test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.SuperGroupBulkUploadAddMysql -->
+      <class name="UserRoles.UserRolesBulkUpdate">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesBulkUpdate"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesBulkUpdate -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.DeleteUserGroupInMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="deleteUserGroupInMysql"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.DeleteUserGroupInMysql -->
+      <class name="UserRoles.UserRolesBulkUpdateMember">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesBulkUpdateMember"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesBulkUpdateMember -->
+      <class name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadValidatePrefilldData">
+        <methods>
+          <include name="teardown"/>
+          <include name="activityTagsBulkUploadValidatePrefilldData"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadValidatePrefilldData -->
+      <class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerAllowUserToExportDataXLS"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS -->
+      <class name="test.WorkTemplateAddModifyDelete.WorkTemplateDefineDayTypesModify">
+        <methods>
+          <include name="teardown"/>
+          <include name="defineDayTypeModify"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.WorkTemplateDefineDayTypesModify -->
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.AddSuperGroupInMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="addSuperGroupInMysql"/>
+        </methods>
+      </class> <!-- test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.AddSuperGroupInMysql -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadDeleteMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="deleteUserGroupInMysql"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadDeleteMysql -->
+      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerDontAllowUserToExportDataPDF2"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2 -->
+      <class name="test.WorkTemplateAddModifyDelete.WorkTemplateDelete">
+        <methods>
+          <include name="workTemplateDelete"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.WorkTemplateDelete -->
+      <class name="test.WorkProfile.WorkProfilesExcelValidation">
+        <methods>
+          <include name="teardown"/>
+          <include name="cloneOnWorkProfiles"/>
+        </methods>
+      </class> <!-- test.WorkProfile.WorkProfilesExcelValidation -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadModifyMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="modifyUserGroupInMysql"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadModifyMysql -->
+      <class name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadAdd">
+        <methods>
+          <include name="teardown"/>
+          <include name="activityTagsBulkUploadAdd"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadAdd -->
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ModifySuperGroupInMysql">
+        <methods>
+          <include name="teardown"/>
+          <include name="modifySuperGroupInMysql"/>
+        </methods>
+      </class> <!-- test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ModifySuperGroupInMysql -->
+      <class name="test.WorkTemplateAddModifyDelete.WorkTemplateDefineDayTypesDelete">
+        <methods>
+          <include name="teardown"/>
+          <include name="defineDayTypeDelete"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.WorkTemplateDefineDayTypesDelete -->
+      <class name="UserRoles.UserRolesAddNewMember">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesAddNewManager"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesAddNewMember -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoExistingQualifierText">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosUnknownApplicationAddingtoExistingQualifierText"/>
+        </methods>
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoExistingQualifierText -->
+      <class name="UserRoles.UserRolesModifyManagerEditActivityRating">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerEditActivityRating"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerEditActivityRating -->
+      <class name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.PDFDataValidationForUserGroupTable">
+        <methods>
+          <include name="teardown"/>
+          <include name="pdfValidationUserGroupInMysql"/>
+        </methods>
+      </class> <!-- test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.PDFDataValidationForUserGroupTable -->
+      <class name="test.AOS.AOSDeleteFunction">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosDeleteFunction"/>
+        </methods>
+      </class> <!-- test.AOS.AOSDeleteFunction -->
+      <class name="test.WorkTemplateAddModifyDelete.WorkTemplateTableSortingValidation">
+        <methods>
+          <include name="teardown"/>
+          <include name="workTemplateTableSortingValidation"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.WorkTemplateTableSortingValidation -->
+      <class name="test.WorkTemplateAddModifyDelete.WorkTemplateAdd">
+        <methods>
+          <include name="teardown"/>
+          <include name="workTemplateAdd"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.WorkTemplateAdd -->
+      <class name="test.WorkProfile.WorkProfileForDelete">
+        <methods>
+          <include name="teardown"/>
+          <include name="deletionOnWorkProfiles"/>
+        </methods>
+      </class> <!-- test.WorkProfile.WorkProfileForDelete -->
+      <class name="test.UserDomain.UserDomainExcelValidation">
+        <methods>
+          <include name="teardown"/>
+          <include name="excelValidation"/>
+        </methods>
+      </class> <!-- test.UserDomain.UserDomainExcelValidation -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosUnknownApplicationAddingtoCreateNewProcessName"/>
+        </methods>
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName -->
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ExcelDataValidationForSuperGroupTable">
+        <methods>
+          <include name="excelValidationForSuperGroupTableInMysql"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ExcelDataValidationForSuperGroupTable -->
+      <class name="test.WorkTemplateAddModifyDelete.WorkTemplateExcelValidation">
+        <methods>
+          <include name="teardown"/>
+          <include name="workTemplateExcelValidation"/>
+        </methods>
+      </class> <!-- test.WorkTemplateAddModifyDelete.WorkTemplateExcelValidation -->
+      <class name="test.CategoriesActivityTagsNewOrg.AddActivityTag">
+        <methods>
+          <include name="teardown"/>
+          <include name="addActivityTag"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.AddActivityTag -->
+      <class name="UserRoles.UserRolesModifyMemberToManager">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyMemberToManager"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyMemberToManager -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [MultipleSuite] -->

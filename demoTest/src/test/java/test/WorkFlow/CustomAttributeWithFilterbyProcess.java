@@ -12,6 +12,7 @@ import Pages.SideNavigationMenuPage;
 import Pages.loginPage;
 import WorkFlowPage.CustomAttributeBulkUploadPages;
 import test.BaseTest;
+import test.GenderalVariables;
 import test.Listeners;
 import utilities.ReadXLSdata;
 
@@ -29,9 +30,10 @@ public class CustomAttributeWithFilterbyProcess extends BaseTest{
 
 	@Test
 	public void customAttributeWithDuplicateName() throws InterruptedException, EncryptedDocumentException, IOException {
-		driver = initializeDriver6688();
+		driver = initializeDriverMysql();
+		//driver=initializeDriver3333();
 		listeners.testStepDescription("Step 1: Login to ProHance Application");
-		loginPage.clickLogin("adminaish", "1");
+		loginPage.clickLogin(GenderalVariables.adminUserName, GenderalVariables.adminPassword);
 		listeners.testStepDescription("Step 2: Click on Work Flow");
 		custom.clickWorkFlowBtn();
 		Thread.sleep(1000);
@@ -47,7 +49,7 @@ public class CustomAttributeWithFilterbyProcess extends BaseTest{
 		custom.clickCustomAttribute();
 		driver.switchTo().frame("contentFrame");
 		listeners.testStepDescription("Step 7: Click on Filte By Process and select some process");
-		custom.selectFilterByProcess("###Process_01");
+		custom.selectFilterByProcess("All Custom Attributes");
 		listeners.testStepDescription("Step 8: Get the process list from web");
 		processList = custom.GetUserArrtribute();
 		listeners.testStepDescription("Step 9: Click on Bulk Upload");
@@ -67,5 +69,7 @@ public class CustomAttributeWithFilterbyProcess extends BaseTest{
 		}
 		
 }
+
+	
 
 }

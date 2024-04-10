@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CategoriesCategory]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="test.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test.CategoriesCategory.DeleteCategory">
+        <methods>
+          <include name="deleteCategory"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.CategoriesCategory.DeleteCategory -->
+      <class name="test.CategoriesCategory.AddCategory">
+        <methods>
+          <include name="teardown"/>
+          <include name="addCategory"/>
+        </methods>
+      </class> <!-- test.CategoriesCategory.AddCategory -->
+      <class name="test.CategoriesCategory.ModifyCategory">
+        <methods>
+          <include name="teardown"/>
+          <include name="modifyCategory"/>
+        </methods>
+      </class> <!-- test.CategoriesCategory.ModifyCategory -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [CategoriesCategory] -->

@@ -527,7 +527,7 @@ public class ActivityTagsPage extends BaseTest
 	public void validateBulkUploadAddMessage()
 	{
 		
-		commons.waitForElementNotVisible(Duration.ofMinutes(20), driver,bulkUploadloadingIcon );
+		commons.waitForElementNotVisible(Duration.ofMinutes(15), driver,bulkUploadloadingIcon );
 		Assert.assertTrue(bulkUploadalterMessage.isDisplayed(), "Alter Message is not showing");
 		String successMsg = bulkUploadalterMessage.getText();
 		successMsg = successMsg.replace("×", "").trim();

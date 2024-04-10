@@ -48,15 +48,15 @@ public class AOSModifyFunction extends BaseTest{
 		
 		aos.clickModifyBtn();
 	
-		String result = randomStringGenerator.randomStringGenerator();
-		aos.sendApplicationNameTxt(result);
+		String result1 = randomStringGenerator.randomStringGenerator();
+		aos.sendApplicationNameTxt(result1);
 		aos.clickAddNewSaveBtn();
 		
 		Thread.sleep(2000);
 		
 		ArrayList<String> ActualList = userdomain.getElementsInRowToList();
 		Thread.sleep(2000);
-		Assert.assertTrue(ActualList.contains(result));
+		Assert.assertTrue(ActualList.contains(result1));
 		
 	}
 }

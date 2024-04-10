@@ -80,7 +80,7 @@ public class CommonMethodsPage
 		}
 		catch (TimeoutException e)
 		{
-			return "Build your own errormessage...";
+			return "Web Driver is not waiting at time";
 		}
 	}
 

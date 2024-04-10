@@ -38,7 +38,7 @@ public class AOSBulkUploadModify extends BaseTest {
 		listeners.testStepDescription("Step 2: Click on Side Navigation Page");
 		sidenavPage.clickSideNavigationBtn();
 
-		listeners.testStepDescription("Step 3: Click on Activities");
+		//listeners.testStepDescription("Step 3: Click on Activities");
 		sidenavPage.clickActivitiesBtn();
 
 		listeners.testStepDescription("Step 4: Click on AOS");
@@ -50,13 +50,13 @@ public class AOSBulkUploadModify extends BaseTest {
 		listeners.testStepDescription("Step 5: Click on More Action");
 		aos.clickMoreActionBtn();
 
-		listeners.testStepDescription("Step 6: Click on Bulk Upload");
+		//listeners.testStepDescription("Step 6: Click on Bulk Upload");
 		driver.findElement(By.xpath("//a[contains(text(),'BULK UPLOAD')]")).click();
 
 		listeners.testStepDescription("Step 7: Click Here to download Pree Filled Template");
 		driver.findElement(By.xpath("//label[contains(text(),'With Prefilled Data')]")).click();
 
-		listeners.testStepDescription("Step 8: Click on 'click here' to download the excel");
+		//listeners.testStepDescription("Step 8: Click on 'click here' to download the excel");
 		aos.clickOnClickHereBtn();
 
 		listeners.testStepDescription("Step 9: Modify the data in excel ans upload the file");

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ActivityTags]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="test.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadAdd">
+        <methods>
+          <include name="teardown"/>
+          <include name="activityTagsBulkUploadAdd"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadAdd -->
+      <class name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadValidatePrefilldData">
+        <methods>
+          <include name="teardown"/>
+          <include name="activityTagsBulkUploadValidatePrefilldData"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadValidatePrefilldData -->
+      <class name="test.CategoriesActivityTagsNewOrg.PDFValidationForActivityTags">
+        <methods>
+          <include name="teardown"/>
+          <include name="PDFvalidationForActivityTags"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.PDFValidationForActivityTags -->
+      <class name="test.CategoriesActivityTagsNewOrg.ModifyActivityTag">
+        <methods>
+          <include name="teardown"/>
+          <include name="modifyActivityTag"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.ModifyActivityTag -->
+      <class name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadDelete">
+        <methods>
+          <include name="teardown"/>
+          <include name="activityTagsBulkUploadDelete"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadDelete -->
+      <class name="test.CategoriesActivityTagsNewOrg.AddActivityTag">
+        <methods>
+          <include name="teardown"/>
+          <include name="addActivityTag"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.AddActivityTag -->
+      <class name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadModify">
+        <methods>
+          <include name="teardown"/>
+          <include name="activityTagsBulkUploadModify"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadModify -->
+      <class name="test.CategoriesActivityTagsNewOrg.ExcelDataValidationForActivityTags">
+        <methods>
+          <include name="teardown"/>
+          <include name="excelDataValidationForActivityTags"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.ExcelDataValidationForActivityTags -->
+      <class name="test.CategoriesActivityTagsNewOrg.DeleteActivityTag">
+        <methods>
+          <include name="teardown"/>
+          <include name="deleteActivityTag"/>
+        </methods>
+      </class> <!-- test.CategoriesActivityTagsNewOrg.DeleteActivityTag -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [ActivityTags] -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UserGroupInMSSQLAddModifyDeleteWithBulkUploadAndValidateOfflineReports">
+	<listeners>
+		<listener class-name="test.Listeners"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class
+				name="MSSQLTest.UserGroupInMSSQLAddModifyDeleteWithBulkUploadAndValidateOfflineReports.AddUserGroupInMSSQL" />
+			<class
+				name="MSSQLTest.UserGroupInMSSQLAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ModifyUserGroupInMssql" />
+			<class
+				name="MSSQLTest.UserGroupInMSSQLAddModifyDeleteWithBulkUploadAndValidateOfflineReports.DeleteUserGroupInMSSQL" />
+			<class
+				name="MSSQLTest.UserGroupInMSSQLAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ExcelValidationUserGroupInMSSQL" />
+			<class
+				name="MSSQLTest.UserGroupInMSSQLAddModifyDeleteWithBulkUploadAndValidateOfflineReports.PDFDataValidationForUserGroupTableMSSQL" />
+			<class
+				name="MSSQLTest.UserGroupInMSSQLAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadAddMSSQL" />
+			<class
+				name="MSSQLTest.UserGroupInMSSQLAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadModifyMSSQL" />
+			<class
+				name="MSSQLTest.UserGroupInMSSQLAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadDeleteMSSQL" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

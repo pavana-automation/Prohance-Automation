@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports">
+	<listeners>
+		<listener class-name="test.Listeners"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.AddUserGroupInMysql" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ModifyUserGroupInMysql" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.DeleteUserGroupInMysql" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ExcelDataValidationForUserGroupTable" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.PDFDataValidationForUserGroupTable" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadAddMysql" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadModifyMysql" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadDeleteMysql" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

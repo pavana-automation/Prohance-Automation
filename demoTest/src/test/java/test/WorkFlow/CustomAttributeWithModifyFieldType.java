@@ -12,6 +12,7 @@ import Pages.SideNavigationMenuPage;
 import Pages.loginPage;
 import WorkFlowPage.CustomAttributeBulkUploadPages;
 import test.BaseTest;
+import test.GenderalVariables;
 import test.Listeners;
 import utilities.ReadXLSdata;
 
@@ -29,9 +30,9 @@ public class CustomAttributeWithModifyFieldType extends BaseTest{
 
 	@Test
 	public void customAttributeWithModifyFieldType() throws InterruptedException, EncryptedDocumentException, IOException {
-		driver = initializeDriver6688();
+		driver = initializeDriverMysql();
 		listeners.testStepDescription("Step 1: Login to ProHance Application");
-		loginPage.clickLogin("adminaish", "1");
+		loginPage.clickLogin(GenderalVariables.adminUserName, GenderalVariables.adminPassword);
 		listeners.testStepDescription("Step 2: Click on Work Flow");
 		custom.clickWorkFlowBtn();
 		Thread.sleep(1000);

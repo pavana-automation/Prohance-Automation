@@ -41,7 +41,7 @@ public class Login extends BaseTest {
 	@Test(dataProvider="getData", groups= {"adminLogin4848"})
 	public void login(HashMap<String, String> input) throws IOException, InterruptedException
 	{
-		driver=initializeDriver4848();
+		driver=initializeDriverMysql();
 		loginPage.clickLogin(input.get("username"),input.get("password"));
 		loginPage.clickLogout();
 	}

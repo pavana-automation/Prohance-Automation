@@ -28,30 +28,29 @@ public class UserDomainSortingFuncton extends BaseTest{
 	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void sortingFunction() throws InterruptedException
 	{
-		listeners.testStepDescription("Step 1: Login into the prohance application");
+		//listeners.testStepDescription("Step 1: Login into the prohance application");
 		driver=initializeDriver3333();
 		loginPage.clickLogin("adminp","1");
-		listeners.testStepDescription("Step 2: Click SideNavigation Page");
+		//listeners.testStepDescription("Step 2: Click SideNavigation Page");
 		sidenavPage.clickSideNavigationBtn();
 		
-		listeners.testStepDescription("Step 3: Click on UserDomain");
+		//listeners.testStepDescription("Step 3: Click on UserDomain");
 		sidenavPage.clickUserDomainBtn();
 		driver.switchTo().frame("contentFrame");
 		Thread.sleep(2000);
 		
-		listeners.testStepDescription("Step 4: Store the WebElements of Name and apply sort function and save as Expected List");
+		//listeners.testStepDescription("Step 4: Store the WebElements of Name and apply sort function and save as Expected List");
 		String expectedList = userdomain.getElementsInRowToList().toString();
 		
-		listeners.testStepDescription("Step 5: Click on Sorting Button and save the list as actual List");
+		//listeners.testStepDescription("Step 5: Click on Sorting Button and save the list as actual List");
 		userdomain.clickDomainAliasHeaderBtn();
-		//Thread.sleep(1000);
+		Thread.sleep(1000);
 		String actualList = userdomain.getElementsInRowToList().toString();
 		
-		listeners.testStepDescription("Step 6: Compare Expected with Actual List");
+		//listeners.testStepDescription("Step 6: Compare Expected with Actual List");
 		
-		Assert.assertEquals(expectedList, actualList);	
-		
-		listeners.testStepDescription("Step 7: Sorting is working as expected");
+		Assert.assertEquals(expectedList, actualList);
+		//listeners.testStepDescription("Step 7: Sorting is working as expected");
 	}
 		
 }

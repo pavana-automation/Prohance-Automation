@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CategoriesCategory">
+<listeners>
+		<listener class-name="test.Listeners"></listener>
+	</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="test.CategoriesCategory.AddCategory"/>
+      <class name="test.CategoriesCategory.ModifyCategory"/>
+      <class name="test.CategoriesCategory.DeleteCategory"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

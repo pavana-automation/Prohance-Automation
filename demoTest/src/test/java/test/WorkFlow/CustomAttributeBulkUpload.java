@@ -12,6 +12,7 @@ import Pages.SideNavigationMenuPage;
 import Pages.loginPage;
 import WorkFlowPage.CustomAttributeBulkUploadPages;
 import test.BaseTest;
+import test.GenderalVariables;
 import test.Listeners;
 import utilities.ReadXLSdata;
 
@@ -29,33 +30,34 @@ public class CustomAttributeBulkUpload extends BaseTest {
 
 	@Test
 	public void customAttributeBulkUpload() throws InterruptedException, EncryptedDocumentException, IOException {
-		driver = initializeDriver6688();
-		listeners.testStepDescription("Step 1: Login to ProHance Application");
-		loginPage.clickLogin("adminaish", "1");
-		listeners.testStepDescription("Step 2: Click on Work Flow");
+		driver = initializeDriverMysql();
+		//driver=initializeDriver3333();
+		//listeners.testStepDescription("Step 1: Login to ProHance Application");
+		loginPage.clickLogin(GenderalVariables.adminUserName, GenderalVariables.adminPassword);
+		//listeners.testStepDescription("Step 2: Click on Work Flow");
 		custom.clickWorkFlowBtn();
 		Thread.sleep(1000);
 		custom.switchTabs();
-		listeners.testStepDescription("Step 3: Click on Side Navigation bar");
+		//listeners.testStepDescription("Step 3: Click on Side Navigation bar");
 		nav.clickWorkFlowSideNavigationArrow();
-		listeners.testStepDescription("Step 4: Scroll down the navigation");
+		//listeners.testStepDescription("Step 4: Scroll down the navigation");
 		custom.scrollSideNavigationBar();
-		listeners.testStepDescription("Step 5: Click on Administartion ");
+		//listeners.testStepDescription("Step 5: Click on Administartion ");
 		custom.clickAdministrationBtn();
 		Thread.sleep(1000);
-		listeners.testStepDescription("Step 6: Click on Custom Attribute");
+		//listeners.testStepDescription("Step 6: Click on Custom Attribute");
 		custom.clickCustomAttribute();
 		driver.switchTo().frame("contentFrame");
-		listeners.testStepDescription("Step 7: Click on Bulk Upload");
+		//listeners.testStepDescription("Step 7: Click on Bulk Upload");
 		custom.clickBulkUpload();
-		listeners.testStepDescription("Step 8: Click on Template with existing Custom Attributes");
+		//listeners.testStepDescription("Step 8: Click on Template with existing Custom Attributes");
 		custom.clickTempWithData();
-		listeners.testStepDescription("Step 9: Click on Click here btn");
+		//listeners.testStepDescription("Step 9: Click on Click here btn");
 		custom.clickClickHereBtn();
-		listeners.testStepDescription("Step 10: Get custom attribute list");
+		//listeners.testStepDescription("Step 10: Get custom attribute list");
 		excel.getCustomAttributeAddModifyAndDelete();
 		custom.clickChooseFileBtn(excel.getRecentFilePath());
-		listeners.testStepDescription("Step 11: Compare the fail message");
+		//listeners.testStepDescription("Step 11: Compare the fail message");
 		boolean check = custom.clickSuccessMsg();
 		Assert.assertTrue(check);
 	}

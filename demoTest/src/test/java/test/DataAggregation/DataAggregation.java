@@ -33,9 +33,10 @@ public class DataAggregation extends BaseTest {
 
 	@Test
 	public void aggregationForSingleType() throws InterruptedException, StaleElementReferenceException {
-		driver = initializeDriver6688();
+		//driver = initializeDriverMysql();
+		driver=initializeDriver3333();
 		listeners.testStepDescription("Step 1: Login to ProHance Application");
-		loginPage.clickLogin("adminaish", "1");
+		loginPage.clickLogin("adminaish_1", "1");
 		listeners.testStepDescription("Step 2: Open Side NavigationMenuBar");
 		nav.clickSideNavigationBtn();
 		listeners.testStepDescription("Step 3: Open Data Aggregation");

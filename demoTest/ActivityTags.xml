@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ActivityTags">
+
+	<listeners>
+		<listener class-name="test.Listeners"></listener>
+	</listeners>
+
+	<test thread-count="7" name="Test">
+		<classes>
+			<class name="test.CategoriesActivityTagsNewOrg.AddActivityTag" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.ModifyActivityTag" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.DeleteActivityTag" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.ExcelDataValidationForActivityTags" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.PDFValidationForActivityTags" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadValidatePrefilldData" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadAdd" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadModify" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadDelete" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

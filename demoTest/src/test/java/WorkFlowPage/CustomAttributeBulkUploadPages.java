@@ -120,6 +120,7 @@ public class CustomAttributeBulkUploadPages {
 	 
 	 public boolean getFailMsg() {
 			String ms = this.failMsg.getText();
+			System.out.println(ms);
 			String msg = ms.substring(1, ms.length()).replaceAll("\\s+", "");
 			String compareMsg = "Uploadcompletedwitherror(s)";
 			boolean check = msg.equals(compareMsg);

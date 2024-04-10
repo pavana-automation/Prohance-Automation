@@ -11,6 +11,7 @@ import AssertOptimizationPage.WorkStationGroupsPages;
 import Pages.SideNavigationMenuPage;
 import Pages.loginPage;
 import test.BaseTest;
+import test.GenderalVariables;
 import test.Listeners;
 import utilities.ReadXLSdata;
 
@@ -28,9 +29,9 @@ public class WorkStationGroupsClear extends BaseTest{
 
 	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void workStationGroups() throws InterruptedException, EncryptedDocumentException, IOException {
-		driver = initializeDriver6688();
+		driver = initializeDriverMysql();
 		 listeners.testStepDescription("Step 1: Login to ProHance Application");
-		loginPage.clickLogin("adminaish", "1");
+		 loginPage.clickLogin(GenderalVariables.adminUserName, GenderalVariables.adminPassword);
 		 listeners.testStepDescription("Step 2: Click on Work Flow");
 		workStation.clickAssertOptimization();
 		Thread.sleep(1000);

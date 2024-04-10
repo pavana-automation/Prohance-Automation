@@ -41,7 +41,7 @@
       	<class name="UserRoles.UserRolesAddNewManager"/>
       	<class name="UserRoles.UserRolesAddNewManagerDelete"/>
       	<class name="UserRoles.UserRolesAddNewMemberDelete"/>
-      	<!--<class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataPDF"></class>-->
+      	<class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataPDF"></class>
       	<class name="UserRoles.UserRoleExcelValidation"/>
       	<class name="UserRoles.UserRolePDFValidation"></class>
       	<class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS"></class>
@@ -57,13 +57,82 @@
       	<class name="UserRoles.UserRolesModifyManagerHierarchyLevel"></class>
       	<class name="UserRoles.UserRolesModifyManagerEditActivityRating"></class>
       	<class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS"></class>
+      	<class name="test.WorkTemplateAddModifyDelete.WorkTemplateAdd" />
+		<class name="test.WorkTemplateAddModifyDelete.WorkTemplateModify" />
+		<class
+				name="test.WorkTemplateAddModifyDelete.WorkTemplateDelete" />
+		<class
+				name="test.WorkTemplateAddModifyDelete.WorkTemplateDefineDayTypesAdd" />
+		<class
+				name="test.WorkTemplateAddModifyDelete.WorkTemplateDefineDayTypesModify" />
+		<class
+				name="test.WorkTemplateAddModifyDelete.WorkTemplateDefineDayTypesDelete" />
+		<class
+				name="test.WorkTemplateAddModifyDelete.WorkTemplatePDFValidation" />
+		<class
+				name="test.WorkTemplateAddModifyDelete.WorkTemplateExcelValidation" />
+		<class
+				name="test.WorkTemplateAddModifyDelete.DayTypeAddDuplicateValidation" />
+		<class
+				name="test.WorkTemplateAddModifyDelete.DefineDayTypeClearButtonValditaion" />
+		<class
+				name="test.WorkTemplateAddModifyDelete.EmptyDayTypeAndAliasValidation" />
+		<class
+				name="test.WorkTemplateAddModifyDelete.WorkTemplateValidateRecordsToDisplay" />
+		<class
+				name="test.WorkTemplateAddModifyDelete.WorkTemplateTableSortingValidation" />
+	  <class name="test.CategoriesCategory.AddCategory"/>
+      <class name="test.CategoriesCategory.ModifyCategory"/>
+      <class name="test.CategoriesCategory.DeleteCategory"/>
+      <class name="test.CategoriesActivityTagsNewOrg.AddActivityTag" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.ModifyActivityTag" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.DeleteActivityTag" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.ExcelDataValidationForActivityTags" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.PDFValidationForActivityTags" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadValidatePrefilldData" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadAdd" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadModify" />
+			<class
+				name="test.CategoriesActivityTagsNewOrg.ActivityTagsBulkUploadDelete" />
+			
+						<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.AddUserGroupInMysql" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ModifyUserGroupInMysql" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.DeleteUserGroupInMysql" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ExcelDataValidationForUserGroupTable" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.PDFDataValidationForUserGroupTable" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadAddMysql" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadModifyMysql" />
+			<class
+				name="test.UserGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.UserGroupBulkUploadDeleteMysql" />
+	  <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.AddSuperGroupInMysql"/>
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ModifySuperGroupInMysql"/>
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.DeleteSuperGroupInMysql"/>
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.ExcelDataValidationForSuperGroupTable"/>
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.PDFDataValidationForSuperGroupTable"/>
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.SuperGroupBulkUploadAddMysql"/>
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.SuperGroupBulkUploadModifyMysql"/>
+      <class name="test.SuperGroupInMysqlAddModifyDeleteWithBulkUploadAndValidateOfflineReports.SuperGroupBulkUploadDeleteMysql"/>
       	<!--<class name="test.WorkFlow.CustomAttributeWithFilterbyProcess"/>
      	<class name="test.WorkFlow.CustomAttributeWithDeleteWithDependency"/>
       	<class name="test.WorkFlow.CustomAttributeWithModifyFieldType"/>
       	<class name="test.WorkFlow.CustomAttributeWithMissingField"/>
       	<class name="test.WorkFlow.CustomAttributeBulkUpload"/>
      <class name="test.WorkFlow.CustomAttributeWithDuplicateName"/>-->
-    <!-- <class name="test.AssertOptimization.SoftwareDefinitionForSoftwareTagsPdf"/>
+<!--   <class name="test.AssertOptimization.SoftwareDefinitionForSoftwareTagsPdf"/>
 	<class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsCURD"/>
 	<class name="test.AssertOptimization.SoftwareDefinitionPdfExport"/>
 	<class name="test.AssertOptimization.SoftwareDefinitationExcelExport"/>

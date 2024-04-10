@@ -24,8 +24,8 @@ public class DataAggregationForAllType extends BaseTest {
 	
 	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void alltypeValidation() throws InterruptedException, StaleElementReferenceException {
-		driver = initializeDriver6688();
-		driver = initializeDriver6688();
+		//driver = initializeDriverMysql();
+		driver=initializeDriver3333();
 		listeners.testStepDescription("Step 1: Login to ProHance Application");
 		loginPage.clickLogin("adminaish", "1");
 		listeners.testStepDescription("Step 2: Open Side NavigationMenuBar");

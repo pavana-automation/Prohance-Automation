@@ -72,6 +72,8 @@ public class WorkTemplateTableSortingValidation extends BaseTest
 			List<String> expcetedList = new ArrayList<String>();
 			expcetedList.addAll(webSortedList);
 			Collections.sort(expcetedList, Comparator.comparing(String::toLowerCase));
+			System.out.println(webSortedList);
+			System.out.println(expcetedList);
 			softAssert.assertEquals(webSortedList, expcetedList);
 
 			workTemplatePage.clickForSorting(String.valueOf(i));
@@ -79,8 +81,10 @@ public class WorkTemplateTableSortingValidation extends BaseTest
 			List<String> expcetedListReverse = new ArrayList<String>();
 			expcetedListReverse.addAll(webSortedListReverse);
 			Collections.sort(webSortedListReverse, Collections.reverseOrder(Comparator.comparing(String::toLowerCase)));
+			System.out.println(webSortedListReverse);
+			System.out.println(expcetedListReverse);
 			softAssert.assertEquals(webSortedListReverse, expcetedListReverse);
-
+                
 		}
 		softAssert.assertAll();
 

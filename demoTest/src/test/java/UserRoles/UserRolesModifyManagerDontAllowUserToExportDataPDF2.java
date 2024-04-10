@@ -36,9 +36,9 @@ public class UserRolesModifyManagerDontAllowUserToExportDataPDF2 extends BaseTes
 	//@Test
 	public void userRolesModifyManagerDontAllowUserToExportDataPDF2() throws InterruptedException
 	{
-		driver=initializeDriver6688();
+		driver=initializeDriver3333();
 
-		loginPage.clickLogin("pavana","1");
+		loginPage.clickLogin("adminp","1");
 
 		sidenavPage.clickSideNavigationBtn();
 		sidenavPage.ClickOnUserRoleBtn();

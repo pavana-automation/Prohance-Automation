@@ -57,6 +57,12 @@
           <include name="workStationGroups"/>
         </methods>
       </class> <!-- test.AssertOptimization.WorkStationGroupsClear -->
+      <class name="test.AssertOptimization.SoftwareDefinitionForSoftwareTagsPdf">
+        <methods>
+          <include name="teardown"/>
+          <include name="softwareDefinitationForSoftwareTagsCURD"/>
+        </methods>
+      </class> <!-- test.AssertOptimization.SoftwareDefinitionForSoftwareTagsPdf -->
       <class name="test.AssertOptimization.SoftwareDefinitationWithMissingAssociatedProcessesField">
         <methods>
           <include name="teardown"/>

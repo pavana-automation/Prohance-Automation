@@ -48,10 +48,10 @@ public class AOSAddNew extends BaseTest{
 		
 		listeners.testStepDescription("Step 4: click on add new AOS");
 		aos.clickAddNewBtn();
-		String result = randomStringGenerator.randomStringGenerator();
+		String result1 = randomStringGenerator.randomStringGenerator();
 		
-		listeners.testStepDescription("Step 5: Fill all the details and the expected result is :"+result);
-		aos.sendApplicationNameTxt(result);
+		listeners.testStepDescription("Step 5: Fill all the details and the expected result is :"+result1);
+		aos.sendApplicationNameTxt(result1);
 		aos.selectActivityTypeDrpDwn();
 		
 		listeners.testStepDescription("Step 6: click on Save Button");
@@ -70,7 +70,7 @@ public class AOSAddNew extends BaseTest{
 		//test.info("Check whether the newly added record in present in the list");
 		Thread.sleep(2000);
 		ArrayList<String> ActualList = userdomain.getElementsInRowToList();
-		Assert.assertTrue(ActualList.contains(result));
+		Assert.assertTrue(ActualList.contains(result1));
 		
 		listeners.testStepDescription("Step 10: AOS added new one successfully");
 	}

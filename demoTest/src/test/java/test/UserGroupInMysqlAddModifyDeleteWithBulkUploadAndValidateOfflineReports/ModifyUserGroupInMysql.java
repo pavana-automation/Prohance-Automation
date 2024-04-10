@@ -35,7 +35,7 @@ public class ModifyUserGroupInMysql extends BaseTest
 	
 	SoftAssert			softAssert					= new SoftAssert();
 
-	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	@Test
 	public void modifyUserGroupInMysql() throws InterruptedException, IOException
 	{
 		driver = initializeDriverMysql();
